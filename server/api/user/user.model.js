@@ -12,6 +12,7 @@ var UserSchema = new Schema({
   age: String,
   occupation: String,
   state: String,
+  twin: String,
   role: {
     type: String,
     default: 'user'

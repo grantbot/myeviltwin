@@ -2,9 +2,14 @@
 
 angular.module('myeviltwinlikesApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
-    $scope.menu = [{
+    $scope.menu = [
+    {
       'title': 'Home',
       'link': '/'
+    },
+    {
+      'title': 'Post Article',
+      'link': '/article'
     }];
 
     $scope.isCollapsed = true;
