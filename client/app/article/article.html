@@ -1,0 +1,19 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Save an article to send to your twin!</h1>
+    </div>
+    <div class="col-sm-12">
+      <form class="form" name="form" ng-submit="submitArticle(form)" novalidate>
+
+        <div class="form-group">
+          <label>Article</label>
+          <input type="article" name="article" class="form-control" ng-model="article" required>
+        </div>
+      </form>
+    </div>
+  </div>
+  <hr>
+</div>

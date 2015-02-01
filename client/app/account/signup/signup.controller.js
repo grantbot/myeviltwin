@@ -12,7 +12,11 @@ angular.module('myeviltwinlikesApp')
         Auth.createUser({
           name: $scope.user.name,
           email: $scope.user.email,
-          password: $scope.user.password
+          password: $scope.user.password,
+          age: $scope.user.age,
+          affiliation: $scope.user.affiliation,
+          occupation: $scope.user.occupation,
+          state: $scope.user.state
         })
         .then( function() {
           // Account created, redirect to home
